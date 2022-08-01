@@ -56,6 +56,16 @@ h5{
 	font-weight: 500;
 }
 
+h5{
+	font-size: 17px;
+	font-weight: 500;
+}
+
+h6 {
+	font-size: 13px;
+	font-weight: 500;
+}
+
 body {
 	background-color: #F2F4FC;
 }
@@ -68,9 +78,7 @@ h1 {
 }
 
 .vertical-container {
-	max-width: 100vw;
-	margin-right: auto;
-    margin-left: auto;
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -92,14 +100,12 @@ h1 {
 header {
 	display: flex;
 	flex-direction: column;
-	border: 10px solid pink;
 }
 
 .menu-box {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid red;
 	padding: 6%;
 }
 
@@ -113,8 +119,6 @@ header {
 	position: absolute;
 	right: 6vw;
 }
-
-
 
 label {
 	position: absolute;
@@ -132,7 +136,9 @@ label {
 }
 
 hr {
-	border:1px solid black;
+	height: 0.2vh;
+	background-color: black;
+	border: none;
 }
 
 nav {
@@ -140,7 +146,6 @@ nav {
 }
 
 ul{
-	border: 1px solid black;
 	padding: 0;
 	list-style: none;
 	background: lightgrey;
@@ -179,7 +184,6 @@ ul li {
 	margin-top: 50px;
 	font-size: 17px;
 	font-weight: 500;
-	border: 1px solid black;
 }
 
 .button-white {
@@ -189,13 +193,13 @@ ul li {
 
 .button-learn {
 	font-size: 17px;
-	font-weight: 400;
+	font-weight: 500;
 	text-decoration: none;
 	color: #072AC8
 }
 
 #main {
-	margin: 5vh 0;
+	margin-bottom: 5vh 0;
 	width: 100vw;
 }
 
@@ -206,18 +210,22 @@ ul li {
 }
 
 .texts{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80vw;
 	padding: 5%;
-	/* margin: 0px; */
 	text-align: center;
-	border: black 1px solid;
 }
 
 .texts h4 {
 	margin-top: 2vh;
 }
 
+/* ------------------------LOGOS-------------------------- */
+
 #logos {
-	margin: 130px 0;
+	margin: 15vw 0;
 }
 
 #logos div{
@@ -227,41 +235,60 @@ ul li {
 	justify-content: center;
 }
 
+/* --------------------RECENT PROJECTS-------------------- */
+
 #recent-projects {
-	margin-bottom: 100px;
+	margin-bottom: 8vh;
 }
 
 #recent-projects article {
-	width: 100vw;
+	background-color: white;
+	width: 80vw;
 	display: flex;
 	flex-direction: column;
 	gap: 1vh;
 }
 
+#recent-projects h3{
+	margin-left: 8vw;
+	margin-top: 5vw;
+}
 
-/* ------------------------------ OPINIONS */
+#recent-projects h5{
+	margin-left: 8vw;
+	margin-top: 1vw;
+}
+
+#recent-projects a{
+	margin-left: 8vw;
+	margin-top: 5vw;
+	margin-bottom: 8vw;
+}
+
+
+/* ------------------------------ OPINIONS------------------ */
 
 #opinions {
-	margin-top: 100px;
-	max-width: 1300px;
-	max-height: 600px;
+	margin-bottom: 8vh;
+	height: 50vh;
+	padding: 5vh 0;
 	position: relative;
-	margin-right: auto;
-    margin-left: auto;
 	background-color: #292E47;
 	background-image: url("https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/Orbit_uw90mo.png");
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
 }
 
 #opinions h3 {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 6vh;
+	margin-bottom: 6vh;
 }
 
 .disposition{
-	max-width: 1300px;
+	width: 100vw;
 	margin-right: auto;
    	margin-left: auto;
-	height: 622px;
 	display: flex;
 	justify-content: space-around;
 	align-items: baseline;
@@ -292,49 +319,79 @@ ul li {
 }
 
 .profile-pic {
-
+width: 15vw;
+height: 15vw;
 }
 
 .personal-opinion {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	height: 100%;
+	line-height: 5vh;
+	width: 80vw;
 	align-items: center;
 	justify-content: space-around;
 }
 
+.card{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 3vw;
+}
+.card-texts {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+
+	align-items: flex-start;
+}
+
+
+/* --------------------- SERVICES ------------------------*/
+
 #services {
-	margin-top: 100px;
-	max-width: 1100px;
-	margin-right: auto;
-    margin-left: auto;
+	margin-bottom: 8vh;
 }
 
 #services article {
-	background-color: #FFFFFF; 
-	padding: 30px;
-	flex-grow: 1;
-	flex-basis: 0;
-}
-
-.separation {
-	gap: 5vh;
-}
-
-
-/* QUESTIONS */
-
-#questions {
-	margin-top: 100px;
+	background-color: white;
+	width: 60vw;
 	display: flex;
 	flex-direction: column;
-	background-color: #FFC600;
+	gap: 4vh;
+	padding: 10%;
 }
 
-.box{
-	width: 1300px;
+#services img {
+	width: 20vw;
+}
+
+
+/* ---------------QUESTIONS------------------ */
+
+#questions {
+	margin-bottom: 8vh;
+	background-color: #FFC600;
+	height: 50vh;
+	/* padding: 5vh 0;
+	position: relative; */
+}
+
+.box {
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3vh;
+	margin: 0;
 	text-align: center;
+
+
+}
+
+/* .box{
+
 	padding: 130px 0;
 	max-width: 1300px;
 	margin-right: auto;
@@ -342,27 +399,36 @@ ul li {
 	display: flex;
 	flex-direction: column;
 	align-items: left;
-}
+} */
 
-.form {
+form {
+	width: 70vw;;
+	position: relative;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: baseline;
+	align-items: center;
 }
 
-.form form {
+/* .form form {
 	display: flex;
 	justify-content: center;
 	gap: 20px;
+} */
+
+form input{
+
 }
 
-.form-horizontal img {
+form img {
+	position: absolute;
 	width: 10px;
 	height: 10px;
 }
 
 #questions button {
-	padding: 20px 100px;
+	width: 50vw;
+	/* padding: 3vh 15vw; */
 	background-color: #072AC8;
 	margin-bottom: 50px;
 	font-size: 17px;
@@ -372,7 +438,8 @@ ul li {
 }
 
 #questions input {
-	padding: 20px 100px;
+	width: 50vw;
+	/* padding: 3vh 100px; */
 	background-color: white;
 	margin-bottom: 50px;
 	font-size: 17px;
