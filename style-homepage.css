@@ -70,11 +70,13 @@ body {
 	background-color: #F2F4FC;
 }
 
+
+
+@media only screen and (max-width: 902px) {
+
 .visible {
 	display: none;
 }
-
-/* @media only screen and (max-width: 902px) {} */
 
 h1 {
 	font-size: 30px;
@@ -491,3 +493,408 @@ address {
 	grid-template-columns: auto auto auto;
 	gap: 50% 20%;
 }
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 903px) {
+
+	.visible {
+		display: unset;
+	}
+
+	h1 {
+		font-size: 60px;
+		font-weight: 700;
+	}
+	
+	.vertical-container {
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2vh;
+		margin: 0;
+	}
+	
+	.button-blue {
+		background-color: #072AC8;
+		color: white;
+		text-decoration: none;
+		padding: 15px 30px;
+		font-size: 17px;
+		font-weight: 500;
+	}
+	
+	/* ------------------------HEADER -----------------------*/
+	
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		border: 1px solid black;
+	}
+	
+	.logo-box{
+		padding: 6%;
+		max-width: 10vw;
+		max-height: auto;
+		/* height: 18px; */
+	}
+	
+	#hamburguer{
+		/* position: relative;
+		margin-right: 5%;
+		width: 15%;
+		display: flex;
+		flex-direction: column; */
+	}
+	
+	#hamburguer input{
+		display: none; 
+	}
+	
+	ul{
+		font-size: 17px;
+		font-weight: 500;
+		display: flex;
+		list-style: none;
+		gap: 60px;
+		/* position: absolute;
+		top: 7.2vh;
+		left: -80vw;
+		width: 100vw;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		list-style: none;
+		padding-top: 2vh;
+		padding-bottom: 2vh; */
+	}
+	
+
+	label {
+		display: none;
+	}
+
+	
+	ul li {
+		color:#6B708D;
+		width: 100vw;
+		margin: 0;
+		padding: 5%;
+		font-size: 17px;
+		font-weight: 500;
+		border: 1px solid black;
+	}
+	
+	
+	
+	
+	
+	
+	/*-------------------------- MAIN --------------------------*/
+	
+	.two-buttons {
+		display: flex;
+		align-content: center;
+		margin-top: 50px;
+		font-size: 17px;
+		font-weight: 500;
+	}
+	
+	.button-white {
+		text-decoration: none;
+		padding: 15px 30px;
+	
+	}
+	
+	.button-learn {
+		font-size: 17px;
+		font-weight: 500;
+		text-decoration: none;
+		color: #072AC8
+	}
+	
+	#main {
+		margin-bottom: 5vh 0;
+		width: 100vw;
+	}
+	
+	#main img {
+		padding: 0px;
+		margin: 0px;
+		width: 70vw;
+	}
+	
+	.texts{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80vw;
+		padding: 5%;
+		text-align: center;
+	}
+	
+	.texts h4 {
+		margin-top: 2vh;
+	}
+	
+	/* ------------------------LOGOS-------------------------- */
+	
+	#logos {
+		margin: 15vw 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.logos-grid{
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	
+	/* --------------------RECENT PROJECTS-------------------- */
+	
+	#recent-projects {
+		margin-bottom: 8vh;
+	}
+	
+	#recent-projects article {
+		background-color: white;
+		width: 80vw;
+		display: flex;
+		flex-direction: column;
+		gap: 1vh;
+	}
+	
+	#recent-projects h3{
+		margin-left: 8vw;
+		margin-top: 5vw;
+	}
+	
+	#recent-projects h5{
+		margin-left: 8vw;
+		margin-top: 1vw;
+	}
+	
+	#recent-projects a{
+		margin-left: 8vw;
+		margin-top: 5vw;
+		margin-bottom: 8vw;
+	}
+	
+	
+	/* ------------------------------ OPINIONS------------------ */
+	
+	#opinions {
+		margin-bottom: 8vh;
+		height: 50vh;
+		padding: 5vh 0;
+		position: relative;
+		background-color: #292E47;
+		background-image: url("https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/Orbit_uw90mo.png");
+		background-position: center;
+		background-repeat:no-repeat;
+		background-size: cover;
+	}
+	
+	#opinions h3 {
+		margin-top: 6vh;
+		margin-bottom: 6vh;
+	}
+	
+	.disposition{
+		width: 100vw;
+		margin-right: auto;
+		   margin-left: auto;
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+	}
+	
+	.emoji1 {
+		position: absolute;
+		top: 50px;
+		left: 50px;
+	}
+	
+	.emoji2 {
+		position: absolute;
+		top: 50px;
+		right: 50px;
+	}
+	
+	.emoji3 {
+		position: absolute;
+		bottom: 50px;
+		right: 50px;
+	}
+	
+	.emoji4 {
+		position: absolute;
+		bottom: 50px;
+		left: 50px;
+	}
+	
+	.profile-pic {
+	width: 15vw;
+	height: 15vw;
+	}
+	
+	.personal-opinion {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		line-height: 5vh;
+		width: 80vw;
+		align-items: center;
+		justify-content: space-around;
+	}
+	
+	.card{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 3vw;
+	}
+	.card-texts {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+	
+		align-items: flex-start;
+	}
+	
+	
+	/* --------------------- SERVICES ------------------------*/
+	
+	#services {
+		margin-bottom: 8vh;
+	}
+	
+	#services article {
+		background-color: white;
+		width: 60vw;
+		display: flex;
+		flex-direction: column;
+		gap: 4vh;
+		padding: 10%;
+	}
+	
+	#services img {
+		width: 20vw;
+	}
+	
+	
+	/* ---------------QUESTIONS------------------ */
+	
+	#questions {
+		margin-bottom: 8vh;
+		background-color: #FFC600;
+		height: 50vh;
+		padding-top: 8vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.box {
+		width: 80vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4vh;
+		margin: 0;
+		text-align: center;
+	}
+	
+	form {
+		width: 70vw;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	
+	}
+	
+	.email-btns {
+		width: 70vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2vh;
+		position: relative;
+	}
+	
+	.email-btns img {
+		position: absolute;
+		width: 8vw;
+		height: 8vw;
+		top: 3.2vh;
+		left: 5vw;
+	}
+	
+	::placeholder {
+		color: #292E47;
+		font-weight: 400;
+		padding: 20vw;
+	}
+	
+	#questions input {
+		width: 100%;
+		padding: 4vh 0;
+		background-color: #F2F4FC;
+		font-size: 17px;
+		font-weight: 500;
+		border: none;
+	}
+	
+	#questions button {
+		width: 100%;
+		padding: 4vh 5vw;
+		background-color: #072AC8;
+		font-size: 17px;
+		font-weight: 500;
+		color: white;
+		border: none;
+	}
+	
+	/*----------------------- FOOTER------------------- */
+	
+	#footer {
+		margin-bottom: 8vh;
+		padding-top: 8vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 5vh;
+	}
+	
+	#footer img{
+		width: 28vw;
+		height: auto;
+	}
+	
+	address {
+		text-align: center;
+		font-style: normal;
+		font-size: 17px;
+	}
+	
+	.tags-grid {
+		width: 80vw;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		gap: 50% 20%;
+	}
+	
+	}
