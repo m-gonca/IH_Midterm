@@ -70,6 +70,10 @@ body {
 	background-color: #F2F4FC;
 }
 
+.visible {
+	display: none;
+}
+
 /* @media only screen and (max-width: 902px) {} */
 
 h1 {
@@ -105,20 +109,13 @@ h1 {
 }
 
 .logo-box{
-	
 	padding: 6%;
 	width: 60px;
 	height: 18px;
 	border: 1px solid black;
 }
 
-/* .image-logo {
-	width: 60px;
-	height: 18px;
-} */
-
-
-.hamburguer{
+#hamburguer{
 	position: relative;
 	margin-right: 5%;
 	width: 15%;
@@ -126,16 +123,36 @@ h1 {
 	/* background-color: black; */
 }
 
-.input-ham {
+#hamburguer input{
+
 	display: none; 
 	border: 1px solid black;
-	background-color: black;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	margin: auto;
+}
+
+nav {
+
+	width: 100vw;
+	background-color: lightgrey;
+}
+
+ul{
+	display: none;
+	padding: 0;
+	list-style: none;
+}
+
+input[type="checkbox"]:checked ~ ul{
+	display: block;
+}
+
+input:checked  ~.hamburguer{
+	background-color: black;
 }
 
 label {
@@ -159,16 +176,9 @@ hr {
 	border: none;
 }
 
-nav {
-	display: none;
-	width: 100vw;
-	background-color: lightgrey;
-}
 
-ul{
-	padding: 0;
-	list-style: none;
-}
+
+
 
 ul li {
 	width: 100vw;
@@ -178,17 +188,7 @@ ul li {
 	font-weight: 500;
 }
 
-.input-ham:checked  ~ nav{
-	display: unset;
-}
 
-.input-ham:checked  ~ .hamburguer{
-	background-color: black;
-}
-
-.visible {
-	display: none;
-}
 
 
 
