@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Circle Agency</title>
+	<link rel="stylesheet" href="./style-contact.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="menu-box">
+			<img class="image-logo" src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/Logo_caavug.png">
+			<input class="menu-input"	type="checkbox" id="menu">
+			<label for="menu">
+				<div class="lines">
+					<hr>
+					<hr>
+					<hr>
+				</div>
+			</label>
+		</div>
+		<nav>
+			<ul>
+				<li class="blue2">Home</li>
+				<li>Projects</li>
+				<li>Services</li>
+			</ul>
+		</nav>
+		<a class="button-blue visible" href="#">Contact us</a>
+	</header>
+	<section>
+		<h1>Contact Us</h1>
+		<div>
+			<form action="/some-url" method="get">
+				<div>
+					<label for="name">Full Name*</label><br>
+					<input type="text" id="name" name="name" placeholder="Enter your name">
+				</div>
+				<div>
+					<label for="email">Email</label><br>
+					<input type="email" id="email" placeholder="Enter your email">
+				</div>
+				<div>
+					<label for="phone">Phone</label><br>
+					<input type="number" id="phone" placeholder="Enter your phone">  
+				</div>
+				<div>
+					<label for="message">Message</label><br>
+					<textarea id="message" name="message" rows="4" cols="21" placeholder="Write your message here"></textarea>
+				</div>
+				<div>
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</section>
+</body>

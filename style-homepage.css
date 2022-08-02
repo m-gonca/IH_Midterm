@@ -97,63 +97,80 @@ h1 {
 
 /* ------------------------HEADER -----------------------*/
 
-header {
-	display: flex;
-	flex-direction: column;
-}
-
-.menu-box {
+.header {
+	/* flex-direction: column; */
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	padding: 6%;
 }
 
-.image-logo {
+.logo-box{
+	
+	padding: 6%;
 	width: 60px;
 	height: 18px;
+	border: 1px solid black;
 }
 
-.menu-input{
-	display: none;
+/* .image-logo {
+	width: 60px;
+	height: 18px;
+} */
+
+
+.hamburguer{
+	position: relative;
+	margin-right: 5%;
+	width: 15%;
+	border: 1px solid black;
+	/* background-color: black; */
+}
+
+.input-ham {
+	display: none; 
+	border: 1px solid black;
+	background-color: black;
 	position: absolute;
-	right: 6vw;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 }
 
 label {
 	position: absolute;
-	height: 2vh;
-	width: 7vw;
-	right: 6vw;
-}
-
-.lines {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 20px;
+	width: 20px;
 	display: flex;
 	flex-direction: column;
-	align-content: space-between;
-	gap: 0.6vh;
-	height: auto;
+	justify-content: space-between;
 }
 
 hr {
-	height: 0.2vh;
-	background-color: black;
+	height: 2px;
+	width: 100%;
+	background-color: #292E47;
 	border: none;
 }
 
 nav {
+	display: none;
 	width: 100vw;
+	background-color: lightgrey;
 }
 
 ul{
 	padding: 0;
 	list-style: none;
-	background: lightgrey;
-	display: none;
 }
 
 ul li {
-	display: block;
 	width: 100vw;
 	margin: 0;
 	padding: 5%;
@@ -161,12 +178,12 @@ ul li {
 	font-weight: 500;
 }
 
-.menu-input:checked  ~ ul{
+.input-ham:checked  ~ nav{
 	display: unset;
 }
 
-.menu-input:checked  ~ label{
-	background-color: lightgray;
+.input-ham:checked  ~ .hamburguer{
+	background-color: black;
 }
 
 .visible {
@@ -189,6 +206,7 @@ ul li {
 .button-white {
 	text-decoration: none;
 	padding: 15px 30px;
+
 }
 
 .button-learn {
@@ -226,13 +244,14 @@ ul li {
 
 #logos {
 	margin: 15vw 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-#logos div{
-	width: 100vw;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+.logos-grid{
+	display: grid;
+	grid-template-columns: auto auto;
 }
 
 /* --------------------RECENT PROJECTS-------------------- */
@@ -374,8 +393,10 @@ height: 15vw;
 	margin-bottom: 8vh;
 	background-color: #FFC600;
 	height: 50vh;
-	/* padding: 5vh 0;
-	position: relative; */
+	padding-top: 8vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .box {
@@ -383,78 +404,88 @@ height: 15vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 3vh;
+	gap: 4vh;
 	margin: 0;
 	text-align: center;
-
-
 }
 
-/* .box{
-
-	padding: 130px 0;
-	max-width: 1300px;
-	margin-right: auto;
-    margin-left: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: left;
-} */
-
 form {
-	width: 70vw;;
+	width: 70vw;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 }
 
-/* .form form {
+.email-btns {
+	width: 70vw;
 	display: flex;
-	justify-content: center;
-	gap: 20px;
-} */
-
-form input{
-
+	flex-direction: column;
+	align-items: center;
+	gap: 2vh;
+	position: relative;
 }
 
-form img {
+.email-btns img {
 	position: absolute;
-	width: 10px;
-	height: 10px;
+	width: 8vw;
+	height: 8vw;
+	top: 3.2vh;
+	left: 5vw;
 }
 
-#questions button {
-	width: 50vw;
-	/* padding: 3vh 15vw; */
-	background-color: #072AC8;
-	margin-bottom: 50px;
-	font-size: 17px;
-	font-weight: 500;
-	color: white;
-	border: none;
+::placeholder {
+	color: #292E47;
+	font-weight: 400;
+	padding: 20vw;
 }
 
 #questions input {
-	width: 50vw;
-	/* padding: 3vh 100px; */
-	background-color: white;
-	margin-bottom: 50px;
+	width: 100%;
+	padding: 4vh 0;
+	background-color: #F2F4FC;
+	font-size: 17px;
+	font-weight: 500;
+	border: none;
+}
+
+#questions button {
+	width: 100%;
+	padding: 4vh 5vw;
+	background-color: #072AC8;
 	font-size: 17px;
 	font-weight: 500;
 	color: white;
 	border: none;
 }
 
-/* FOOTER */
+/*----------------------- FOOTER------------------- */
 
 #footer {
-	margin-top: 100px;
+	margin-bottom: 8vh;
+	padding-top: 8vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5vh;
 }
 
-#footer a {
-	
+#footer img{
+	width: 28vw;
+	height: auto;
 }
 
+address {
+	text-align: center;
+	font-style: normal;
+	font-size: 17px;
+}
+
+.tags-grid {
+	width: 80vw;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 50% 20%;
+}
