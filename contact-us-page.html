@@ -12,50 +12,66 @@
 </head>
 <body>
 	<header>
-		<div class="menu-box">
-			<img class="image-logo" src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/Logo_caavug.png">
-			<input class="menu-input"	type="checkbox" id="menu">
-			<label for="menu">
-				<div class="lines">
-					<hr>
-					<hr>
-					<hr>
-				</div>
-			</label>
+		<div class="container header">
+			<div class="logo-box">
+				<img class="image-logo" src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/Logo_caavug.png">
+			</div>
+			<nav id="hamburguer">
+					<input type="checkbox" id="menu">
+					<label for="menu">
+						<hr>
+						<hr>
+						<hr>
+					</label>
+					<ul>
+						<li class="blue2">Home</li>
+						<li>Projects</li>
+						<li>Services</li>
+					</ul>
+			</nav>
+			<div><a class="button-blue visible" href="contact-us-page.html">Contact us</a></div>
 		</div>
-		<nav>
-			<ul>
-				<li class="blue2">Home</li>
-				<li>Projects</li>
-				<li>Services</li>
-			</ul>
-		</nav>
-		<a class="button-blue visible" href="#">Contact us</a>
 	</header>
-	<section>
-		<h1>Contact Us</h1>
-		<div>
+	<section id="form">
+		<h1 class="grey">Contact Us</h1>
+		<div class="box">
 			<form action="/some-url" method="get">
-				<div>
+				<div class="form-section">
 					<label for="name">Full Name*</label><br>
 					<input type="text" id="name" name="name" placeholder="Enter your name">
 				</div>
-				<div>
-					<label for="email">Email</label><br>
-					<input type="email" id="email" placeholder="Enter your email">
+				<div class="pair">
+					<div class="form-section">
+						<label for="email">Email</label><br>
+						<input type="email" id="email" placeholder="Enter your email">
+					</div>
+					<div class="form-section">
+						<label for="phone">Phone</label><br>
+						<input type="number" id="phone" placeholder="Enter your phone">  
+					</div>
 				</div>
-				<div>
-					<label for="phone">Phone</label><br>
-					<input type="number" id="phone" placeholder="Enter your phone">  
-				</div>
-				<div>
+				<div class="form-section">
 					<label for="message">Message</label><br>
 					<textarea id="message" name="message" rows="4" cols="21" placeholder="Write your message here"></textarea>
 				</div>
-				<div>
-					<button type="submit">Submit</button>
+				<div class="form-section">
+					<button class="button-blue"	type="submit">Submit</button>
 				</div>
 			</form>
 		</div>
 	</section>
+	<footer id="footer">
+		<div class="box3">
+			<img class="image-logo" src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/Logo_caavug.png">
+			<address class="light-grey">2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</address>
+		</div>
+		<div class="tags-grid">
+			<div class="tags-item"><a href="#" class="button-learn">Team</a></div>
+			<div class="tags-item"><a href="#" class="button-learn">Services</a></div>
+			<div class="tags-item"><a href="#" class="button-learn">About us</a></div>
+			<div class="tags-item"><a href="#" class="button-learn">Press</a> </div>
+			<div class="tags-item"><a href="#" class="button-learn">Projects</a></div>
+			<div class="tags-item"><a href="#" class="button-learn">Privacy Policy</a></div>
+		</div>
+	</footer>
 </body>
