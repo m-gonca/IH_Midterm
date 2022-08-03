@@ -36,29 +36,14 @@
 }
 
 
-h2 {
-	font-size: 30px;
-	font-weight: 700;
-}
-
 h3 {
 	font-size: 24px;
 	font-weight: 500;
 }
 
-h4{
+h5{
 	font-size: 17px;
 	font-weight: 400;
-}
-
-h5{
-	font-size: 17px;
-	font-weight: 500;
-}
-
-h5{
-	font-size: 17px;
-	font-weight: 500;
 }
 
 h6 {
@@ -72,6 +57,13 @@ body {
 
 
 
+
+
+
+
+
+
+
 @media only screen and (max-width: 902px) {
 
 .visible {
@@ -81,6 +73,16 @@ body {
 h1 {
 	font-size: 30px;
 	font-weight: 700;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h4{
+	font-size: 17px;
+	font-weight: 400;
 }
 
 .vertical-container {
@@ -107,20 +109,23 @@ h1 {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+	/* border: 1px solid black; */
 }
 
 .logo-box{
 	padding: 6%;
 	width: 60px;
 	height: 18px;
+	/* border: 1px solid black; */
 }
 
 #hamburguer{
 	position: relative;
-	margin-right: 5%;
+	margin-right: -45%;
 	width: 15%;
 	display: flex;
 	flex-direction: column;
+	/* border: 1px solid black; */
 }
 
 #hamburguer input{
@@ -342,8 +347,8 @@ ul li {
 }
 
 .profile-pic {
-width: 15vw;
-height: 15vw;
+	max-width: 50px;
+	max-height: 50px;
 }
 
 .personal-opinion {
@@ -358,16 +363,13 @@ height: 15vw;
 
 .card{
 	display: flex;
-	justify-content: space-around;
+	gap: 20px;
 	align-items: center;
-	gap: 3vw;
+
 }
 .card-texts {
-	display: flex;
-	flex-direction: column;
-	justify-items: center;
-
-	align-items: flex-start;
+	text-align: left;
+	line-height: 30px;
 }
 
 
@@ -387,7 +389,7 @@ height: 15vw;
 }
 
 #services img {
-	width: 20vw;
+	max-width: 70px;
 }
 
 
@@ -402,6 +404,8 @@ height: 15vw;
 	flex-direction: column;
 	align-items: center;
 }
+
+
 
 .box {
 	width: 80vw;
@@ -476,9 +480,18 @@ form {
 	gap: 5vh;
 }
 
+.box3{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2vh;
+	/* border: 1px solid black; */
+}
+
 #footer img{
-	width: 28vw;
-	height: auto;
+	width: 100px;
+	/* border: 1px solid black; */
 }
 
 address {
@@ -502,26 +515,34 @@ address {
 
 
 
-@media only screen and (min-width: 903px) {
 
-	.visible {
-		display: unset;
-	}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 903px) {
 
 	h1 {
 		font-size: 60px;
 		font-weight: 700;
 	}
-	
-	.vertical-container {
-		width: 100vw;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 2vh;
-		margin: 0;
+
+	h2 {
+		font-size: 40px;
+		font-weight: 700;
 	}
-	
+
+	h4{
+		font-size: 20px;
+		font-weight: 400;
+	}
+
 	.button-blue {
 		background-color: #072AC8;
 		color: white;
@@ -533,30 +554,34 @@ address {
 	
 	/* ------------------------HEADER -----------------------*/
 	
+	.container {
+		max-width: 1100px;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		justify-content: space-between;
+		/* border: 1px solid red; */
+	}
+
 	.header {
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
-		border: 1px solid black;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
 	}
 	
-	.logo-box{
-		padding: 6%;
-		max-width: 10vw;
-		max-height: auto;
-		/* height: 18px; */
-	}
-	
-	#hamburguer{
-		/* position: relative;
-		margin-right: 5%;
-		width: 15%;
-		display: flex;
-		flex-direction: column; */
+	.image-logo {
+		width: 60px;
+		height: 18px;
 	}
 	
 	#hamburguer input{
 		display: none; 
+	}
+
+	label {
+		display: none;
 	}
 	
 	ul{
@@ -565,47 +590,18 @@ address {
 		display: flex;
 		list-style: none;
 		gap: 60px;
-		/* position: absolute;
-		top: 7.2vh;
-		left: -80vw;
-		width: 100vw;
-		overflow: hidden;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		list-style: none;
-		padding-top: 2vh;
-		padding-bottom: 2vh; */
 	}
-	
-
-	label {
-		display: none;
-	}
-
-	
-	ul li {
-		color:#6B708D;
-		width: 100vw;
-		margin: 0;
-		padding: 5%;
-		font-size: 17px;
-		font-weight: 500;
-		border: 1px solid black;
-	}
-	
-	
-	
-	
 	
 	
 	/*-------------------------- MAIN --------------------------*/
 	
+	#main {
+		margin-bottom: 8%;
+	}
+
 	.two-buttons {
 		display: flex;
 		align-content: center;
-		margin-top: 50px;
 		font-size: 17px;
 		font-weight: 500;
 	}
@@ -622,88 +618,115 @@ address {
 		text-decoration: none;
 		color: #072AC8
 	}
-	
-	#main {
-		margin-bottom: 5vh 0;
-		width: 100vw;
+
+	.hero-shot {
+		position: relative;
 	}
 	
-	#main img {
-		padding: 0px;
-		margin: 0px;
-		width: 70vw;
+	.hero {
+		max-width: 550px;
+	}
+
+	.card1 {
+		position: absolute;
+		max-width: 275px;
+		top: 5%;
+		left: -18%;
+	}
+
+	.card2 {
+		position: absolute;
+		max-width: 275px;
+		right: -20%;
+		bottom: -20%;
 	}
 	
-	.texts{
+	.texts {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		width: 80vw;
-		padding: 5%;
-		text-align: center;
-	}
-	
-	.texts h4 {
-		margin-top: 2vh;
+		justify-content: center;
+		text-align: left;
+		width: 45%;
+		padding: 5% 0 5% 0;
+		/* border: 1px solid green; */
+		gap: 10%;
 	}
 	
 	/* ------------------------LOGOS-------------------------- */
 	
 	#logos {
-		margin: 15vw 0;
+		margin-bottom: 8%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	
 	.logos-grid{
+
 		display: grid;
-		grid-template-columns: auto auto;
+		width: 100%;
+		grid-template-columns: auto auto auto auto auto;
 	}
 	
 	/* --------------------RECENT PROJECTS-------------------- */
 	
 	#recent-projects {
-		margin-bottom: 8vh;
-	}
-	
-	#recent-projects article {
-		background-color: white;
-		width: 80vw;
+		margin-bottom: 8%;
+		max-width: 1100px;
+		margin-right: auto;
+		margin-left: auto;
 		display: flex;
 		flex-direction: column;
-		gap: 1vh;
+		/* border: 1px solid black; */
+	}
+
+	.horizontal {
+		margin-top: 5%;
+		display: flex;
+		/* justify-content: space-between; */
+		gap: 40px;
 	}
 	
+	.box-section {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+	}
+
 	#recent-projects h3{
-		margin-left: 8vw;
-		margin-top: 5vw;
+		margin-left: 8%;
+		margin-top: 8%;
 	}
 	
 	#recent-projects h5{
-		margin-left: 8vw;
-		margin-top: 1vw;
+		margin-left: 8%;
+		margin-top: 5%;
 	}
 	
 	#recent-projects a{
-		margin-left: 8vw;
-		margin-top: 5vw;
-		margin-bottom: 8vw;
+		margin-left: 8%;
+		margin-top: 10%;
+		margin-bottom: 10%;
 	}
 	
 	
 	/* ------------------------------ OPINIONS------------------ */
 	
 	#opinions {
-		margin-bottom: 8vh;
-		height: 50vh;
-		padding: 5vh 0;
+		margin-bottom: 8%;
 		position: relative;
 		background-color: #292E47;
 		background-image: url("https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/Orbit_uw90mo.png");
 		background-position: center;
 		background-repeat:no-repeat;
 		background-size: cover;
+		max-width: 1300px;
+		margin-right: auto;
+    	margin-left: auto;
+		height: 622px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	
 	#opinions h3 {
@@ -712,155 +735,188 @@ address {
 	}
 	
 	.disposition{
-		width: 100vw;
-		margin-right: auto;
-		   margin-left: auto;
+		justify-items:flex-end;
+		width: 80%;
+		height: 100%;
 		display: flex;
-		justify-content: space-around;
-		align-items: baseline;
+		justify-content: center;
+		align-items: center;
 	}
 	
 	.emoji1 {
 		position: absolute;
 		top: 50px;
-		left: 50px;
+		left: 60px;
 	}
 	
 	.emoji2 {
 		position: absolute;
 		top: 50px;
-		right: 50px;
+		right: 60px;
 	}
 	
 	.emoji3 {
 		position: absolute;
 		bottom: 50px;
-		right: 50px;
+		right: 60px;
 	}
 	
 	.emoji4 {
 		position: absolute;
 		bottom: 50px;
-		left: 50px;
+		left: 60px;
 	}
 	
 	.profile-pic {
-	width: 15vw;
-	height: 15vw;
+		max-width: 50px;
+		max-height: 50px;
 	}
 	
 	.personal-opinion {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		line-height: 5vh;
-		width: 80vw;
+		line-height: 50px;
+		width: 80%;
+		height: 100%;
 		align-items: center;
 		justify-content: space-around;
 	}
 	
 	.card{
 		display: flex;
-		justify-content: space-around;
+		gap: 10px;
 		align-items: center;
-		gap: 3vw;
 	}
 	.card-texts {
-		display: flex;
-		flex-direction: column;
-		justify-items: center;
-	
-		align-items: flex-start;
+		text-align: left;
+		line-height: 20px;
 	}
 	
 	
 	/* --------------------- SERVICES ------------------------*/
-	
+
 	#services {
-		margin-bottom: 8vh;
+		margin-bottom: 8%;
+		max-width: 1100px;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid black; */
+	}
+
+	.horizontal2 {
+		margin-top: 5%;
+		height: 300px;
+		display: flex;
+		flex-direction: row;
+		gap: 40px;
+		/* border: 1px solid black; */
 	}
 	
 	#services article {
-		background-color: white;
-		width: 60vw;
+		background-color: #FFFFFF; 
+		padding: 30px;
+		flex-grow: 1;
+		flex-basis: 0;
 		display: flex;
 		flex-direction: column;
-		gap: 4vh;
-		padding: 10%;
+		align-items: left;
+		gap: 20px;
+
 	}
 	
 	#services img {
-		width: 20vw;
+		max-width: 70px;
 	}
+
+	#services h4 { 
+		font-weight: 400;
+	}
+
+
+
+
 	
 	
 	/* ---------------QUESTIONS------------------ */
 	
 	#questions {
-		margin-bottom: 8vh;
+		margin-bottom: 8%;
 		background-color: #FFC600;
-		height: 50vh;
-		padding-top: 8vh;
+		max-width: 1300px;
+		margin-right: auto;
+    	margin-left: auto;
+		height: 500px;
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 	}
 	
 	.box {
-		width: 80vw;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 4vh;
+		gap: 10px;
 		margin: 0;
 		text-align: center;
+		/* border: 1px solid black; */
 	}
 	
 	form {
-		width: 70vw;
+		margin-top: 5%;
+		width: 100%;
 		position: relative;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	
+		/* border: 1px solid black; */
 	}
 	
 	.email-btns {
-		width: 70vw;
+		width: 50%;
+		height: 80px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		justify-content: center;
 		align-items: center;
 		gap: 2vh;
 		position: relative;
+		/* border: 1px solid red; */
 	}
 	
 	.email-btns img {
 		position: absolute;
-		width: 8vw;
-		height: 8vw;
-		top: 3.2vh;
-		left: 5vw;
+		max-width: 30px;
+		max-height: 30px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: -85%;
+		margin: auto;
 	}
 	
 	::placeholder {
 		color: #292E47;
 		font-weight: 400;
-		padding: 20vw;
+		padding: 18%;
 	}
 	
 	#questions input {
-		width: 100%;
-		padding: 4vh 0;
+		width: 70%;
+		height: 100%;
 		background-color: #F2F4FC;
 		font-size: 17px;
 		font-weight: 500;
 		border: none;
+		/* border: 1px solid red; */
 	}
 	
 	#questions button {
-		width: 100%;
-		padding: 4vh 5vw;
+		width: 30%;
+		height: 100%;
 		background-color: #072AC8;
 		font-size: 17px;
 		font-weight: 500;
@@ -871,30 +927,48 @@ address {
 	/*----------------------- FOOTER------------------- */
 	
 	#footer {
-		margin-bottom: 8vh;
-		padding-top: 8vh;
+		
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+
+		margin-bottom: 8%;
+		max-width: 1100px;
+		margin-right: auto;
+		margin-left: auto;
+		/* border: 1px solid red; */
+	}
+
+	.box3{
+		height: 100%;
+		/* border: 1px solid red; */
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		gap: 5vh;
+		justify-content: space-between;
 	}
 	
 	#footer img{
-		width: 28vw;
+		width: 100px;
 		height: auto;
 	}
 	
 	address {
-		text-align: center;
+		text-align: left;
 		font-style: normal;
 		font-size: 17px;
 	}
 	
 	.tags-grid {
-		width: 80vw;
+		width: 400px;
+		height: 100%;
+		font-weight: 400;
 		display: grid;
 		grid-template-columns: auto auto auto;
-		gap: 50% 20%;
+		gap: 50% 5%;
+		/* border: 1px solid green; */
 	}
 	
 	}
