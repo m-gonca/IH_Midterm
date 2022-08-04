@@ -311,6 +311,11 @@ h4{
 	margin-bottom: 8vw;
 }
 
+.width{
+	width: 90%;
+	/* border: 1px solid black; */
+}
+
 
 /* ------------------------------ OPINIONS------------------ */
 
@@ -729,19 +734,29 @@ address {
 	}
 
 	#recent-projects h3{
-		margin-left: 8%;
+	
 		margin-top: 8%;
 	}
 	
 	#recent-projects h5{
-		margin-left: 8%;
+	
 		margin-top: 5%;
 	}
 	
 	#recent-projects a{
-		margin-left: 8%;
+	
 		margin-top: 10%;
 		margin-bottom: 10%;
+	}
+
+	.width{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 0 10%;
+		/* padding: 4%; */
+		height: 350px;
+		/* border: 1px solid red; */
 	}
 	
 	

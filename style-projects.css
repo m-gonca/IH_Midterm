@@ -47,7 +47,7 @@ h6 {
 	font-weight: 500;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
@@ -64,7 +64,6 @@ a{
 
 	body {
 		background-color: #F2F4FC;
-
 	}
 	
 	.visible {
@@ -80,7 +79,6 @@ a{
 		font-size: 30px;
 		font-weight: 700;
 	}
-
 	
 	h3 {
 		font-size: 20px;
@@ -307,6 +305,11 @@ p{
 	margin-left: 8vw;
 	margin-top: 5vw;
 	margin-bottom: 8vw;
+}
+
+.width{
+	width: 90%;
+	/* border: 1px solid black; */
 }
 
 
@@ -560,7 +563,7 @@ address {
 }
 
 .background{
-	background-image: url(https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237001/Midproject_Images/Rectangle_71_j5sscd.png);
+	background-image: url(images/projects2/4.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -610,22 +613,33 @@ p{
 		background-color: white;
 		display: flex;
 		flex-direction: column;
+		/* border: 1px solid black; */
 	}
 
 	#recent-projects h3{
-		margin-left: 8%;
+		
 		margin-top: 8%;
 	}
 	
 	#recent-projects h5{
-		margin-left: 8%;
+	
 		margin-top: 5%;
 	}
 	
 	#recent-projects a{
-		margin-left: 8%;
+	
 		margin-top: 10%;
 		margin-bottom: 10%;
+	}
+
+	.width{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 0 10%;
+		/* padding: 4%; */
+		height: 350px;
+		/* border: 1px solid red; */
 	}
 
 /* ---------------QUESTIONS------------------ */
