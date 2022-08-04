@@ -12,89 +12,102 @@
 </head>
 <body>
 	<header>
-		<div class="menu-box">
-			<img class="image-logo" src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/Logo_caavug.png">
-			<input class="menu-input"	type="checkbox" id="menu">
-			<label for="menu">
-				<div class="lines">
-					<hr>
-					<hr>
-					<hr>
+		<div class="container header">
+			<div class="sub-container">
+				<div class="logo-box">
+					<img class="image-logo" src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/Logo_caavug.png">
 				</div>
-			</label>
+				<nav id="hamburguer">
+						<input type="checkbox" id="menu">
+						<label for="menu">
+							<div class="icon">
+								<hr>
+								<hr>
+								<hr>
+							</div>
+						</label>
+						<ul>
+							<li class="blue2">Home</li>
+							<li>Projects</li>
+							<li>Services</li>
+						</ul>
+				</nav>
+				<div class="visible"><a class="button-blue" href="contact-us-page.html">Contact us</a></div>
+			</div>
 		</div>
-		<nav>
-			<ul>
-				<li class="blue2">Home</li>
-				<li>Projects</li>
-				<li>Services</li>
-			</ul>
-		</nav>
-		<a class="button-blue visible" href="#">Contact us</a>
 	</header>
-	<section id="main-project">
-		<h1>Project Name</h1>
-		<h2>Type</h2>
-		<h2>Date</h2>
-		<div>
-			<img src="" alt="">
-			<p>Texttttttttttttt</p>
-		</div>
-	</section>
-	<section id="recent-projects">
-		<div class="vertical-container">
-			<h2 class="grey">Recent Projects</h2>
-			<div class="vertical-container">
-				<article>
-					<img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237001/Midproject_Images/Rectangle_71_j5sscd.png" alt="simplify">
-					<h3 class="gray">Simplify</h3>
-					<h5>UI Design & App Development</h5>
-					<a href="#" class="button-learn blue">Learn More</a>
-				</article>
-				<article>
-					<img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237001/Midproject_Images/Rectangle_71_1_wrnq6s.png" alt="dashcoin">
-					<h3 class="gray">Dashcoin</h3>
-					<h5>Web Development</h5>
-					<a href="#" class="button-learn blue">Learn More</a>
-				</article>
-				<article>
-					<img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237001/Midproject_Images/Rectangle_71_2_hinvlc.png" alt="Vectorify">
-					<h3 class="gray">Vectorify</h3>
-					<h5>User Experience Design</h5>
-					<a href="#" class="button-learn blue">Learn More</a>
-				</article>
-			</div>
-		</div>
-	</section>
-	<section id="questions">
-		<div class="box">
-				<h2 class="grey ">Do you have any questions?</h2>
-				<h4>Let us help you!</h4>
-				<div class="vertical-container">
-					<img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/mail_32x32_1x_1_jxmdv6.png" alt="email">
-					<form action="/search" method="get" >
-						<!-- <div> -->
-							<input type="email" placeholder="Enter your email">
-							<button type="submit">Subscribe</button>
-						<!-- </div> -->
-					</form>
+	<div class="super-container">
+		<section id="main-project">
+			<div class="vertical-container2">
+				<h1>Project Name</h1>
+				<div class="article">
+					<div class="horizontal">
+						<h3 class="light-grey">Type</h3>
+						<div class="date">
+							<h4>Completed on</h4>
+							<h4 class="light-grey">22/22/22</h4>
+						</div>
+					</div>
+					<div class="box-project">
+						<div class="background"></div>
+						<p class="grey">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat accusamus natus ipsum enim cum nostrum reprehenderit, iure placeat libero, fugiat vitae quasi cupiditate nihil iste optio! Sed ipsa soluta pariatur!</p>
+					</div>
 				</div>
-		</div>
-	</section>
-	<footer id="footer">
-		<div class="vertical-container">
-			<div>
+			</div>
+		</section>
+		<section id="recent-projects">
+			<div class="vertical-container">
+				<h2 class="grey">Recent Projects</h2>
+				<div class="vertical-container horizontal">
+					<article class="box-section">
+						<img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237001/Midproject_Images/Rectangle_71_j5sscd.png" alt="simplify">
+						<h3 class="gray">Simplify</h3>
+						<h5>UI Design & App Development</h5>
+						<a href="project-page.html" class="button-learn blue">Learn More</a>
+					</article>
+					<article class="box-section">
+						<img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237001/Midproject_Images/Rectangle_71_1_wrnq6s.png" alt="dashcoin">
+						<h3 class="gray">Dashcoin</h3>
+						<h5>Web Development</h5>
+						<a href="project-page.html" class="button-learn blue">Learn More</a>
+					</article>
+					<article class="box-section">
+						<img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237001/Midproject_Images/Rectangle_71_2_hinvlc.png" alt="Vectorify">
+						<h3 class="gray">Vectorify</h3>
+						<h5>User Experience Design</h5>
+						<a href="project-page.html" class="button-learn blue">Learn More</a>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section id="questions">
+			<div class="box">
+					<h2 class="grey ">Do you have any questions?</h2>
+					<h4 class="light-grey">Let us help you!</h4>
+					
+						<form action="/search" method="get" >
+							<div class="email-btns">
+								<img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/mail_32x32_1x_1_jxmdv6.png" alt="email">
+								<input type="email" placeholder="Enter your email">
+								<button type="submit">Subscribe</button>
+							</div>
+						</form>
+			</div>
+		</section>
+		<footer id="footer">
+			<div class="box3">
 				<img class="image-logo" src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237000/Midproject_Images/Logo_caavug.png">
-				<address>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</address>
+				<address class="light-grey">2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</address>
 			</div>
-			<div>
-				<a href="#" class="button-learn">Team</a>
-				<a href="#" class="button-learn">Services</a>
-				<a href="#" class="button-learn">About us</a>
-				<a href="#" class="button-learn">Press</a>
-				<a href="#" class="button-learn">Projects</a>
-				<a href="#" class="button-learn">Privacy Policy</a>
+			<div class="tags-grid">
+				<div class="tags-item"><a href="#" class="button-learn">Team</a></div>
+				<div class="tags-item"><a href="#" class="button-learn">Services</a></div>
+				<div class="tags-item"><a href="#" class="button-learn">About us</a></div>
+				<div class="tags-item"><a href="#" class="button-learn">Press</a> </div>
+				<div class="tags-item"><a href="#" class="button-learn">Projects</a></div>
+				<div class="tags-item"><a href="#" class="button-learn">Privacy Policy</a></div>
 			</div>
-		</div>
-	</footer>
+		</footer>	
+	</div>
+	
 </body>

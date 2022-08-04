@@ -1,0 +1,764 @@
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.white {
+	color: white;
+}
+
+.blue {
+	color: #072AC8;
+}
+
+.light-blue{
+	color: #a2d6f9;
+}
+
+.blue2 {
+	color: #0082f3;
+}
+
+.grey {
+	color: #292E47;
+}
+
+.medium-grey {
+	color: #514D67;
+}
+
+.light-grey {
+	color: #6B708D;
+}
+
+.yellow {
+	color: #FFC600;
+}
+
+
+
+h5{
+	font-size: 17px;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width: 902px) {
+
+	.super-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	body {
+		background-color: #F2F4FC;
+
+	}
+	
+	.visible {
+		display: none;
+	}
+	
+	h1 {
+		font-size: 40px;
+		font-weight: 700;
+	}
+	
+	h2 {
+		font-size: 30px;
+		font-weight: 700;
+	}
+
+	
+	h3 {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	
+	h4{
+		font-size: 17px;
+		font-weight: 400;
+	}
+	
+	.vertical-container {
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2vh;
+		margin: 0;
+		/* border: 1px solid green; */
+	}
+	
+	.button-blue {
+		background-color: #072AC8;
+		color: white;
+		text-decoration: none;
+		padding: 15px 30px;
+		font-size: 17px;
+		font-weight: 500;
+		border: none;
+	}
+	
+	/* ------------------------HEADER -----------------------*/
+	
+	.header {
+		position: relative;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		/* border: 1px solid black; */
+	}
+
+	.sub-container{
+		width: 80vw;
+		height: 70px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		/* border: 1px solid red; */
+	}
+	
+	.logo-box{
+		padding: 6% 0;
+		width: 60px;
+		height: 18px;
+		/* border: 1px solid black; */
+	}
+	
+	#hamburguer{
+		position: relative;
+		height: 100%;
+		width: 15%;
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid black; */
+	}
+	
+	#hamburguer input{
+		display: none; 
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		position: relative;
+	}
+	
+	ul{
+		visibility: hidden;
+		position: absolute;
+		top: 70px;
+		left: -80vw;
+		width: 100vw;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		list-style: none;
+		background-color: lightgrey;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+	}
+	
+	#hamburguer input:checked ~ ul{
+		visibility: visible;
+	}
+	
+	#hamburguer input:checked ~ label{
+		background-color: lightgrey;
+	}
+	
+	#hamburguer input:checked ~ label hr{
+		background-color: white;
+	}
+	
+	#hamburguer label {
+		height: 100%;
+		width: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		/* border: 1px solid green; */
+	}
+	
+	.icon {
+		/* border: 1px solid green; */
+		width: 15px;
+		height: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	hr {
+		height: 2px;
+		background-color: #292E47;
+		border: none;
+	}
+	
+	ul li {
+		width: 100vw;
+		margin: 0;
+		padding: 5%;
+		font-size: 17px;
+		font-weight: 500;
+	}
+
+/* --------------------MAIN PROJECT-----------------------*/
+
+#main-project {
+	margin-bottom: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+
+.vertical-container2 {
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 2vh;
+	margin: 0;
+	/* border: 1px solid red; */
+}
+
+.article{
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin: 0;
+	/* border: 1px solid pink; */
+}
+
+.background{
+	background-image: url(https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237001/Midproject_Images/Rectangle_71_j5sscd.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	max-width: 80vw;
+	height: 444px;
+}
+
+.date {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	/* border: 1px solid black; */
+}
+
+.box-project {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+p{
+	font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+/* --------------------RECENT PROJECTS-------------------- */
+
+#recent-projects {
+	margin-bottom: 8vh;
+}
+
+#recent-projects article {
+	background-color: white;
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+}
+
+#recent-projects h3{
+	margin-left: 8vw;
+	margin-top: 5vw;
+}
+
+#recent-projects h5{
+	margin-left: 8vw;
+	margin-top: 1vw;
+}
+
+#recent-projects a{
+	margin-left: 8vw;
+	margin-top: 5vw;
+	margin-bottom: 8vw;
+}
+
+
+/* ---------------QUESTIONS------------------ */
+
+#questions {
+	margin-bottom: 8vh;
+	background-color: #FFC600;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.box {
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4vh;
+	margin: 0;
+	text-align: center;
+	/* border: 1px solid black; */
+}
+
+form {
+	width: 70vw;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+
+.email-btns {
+	width: 70vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2vh;
+	position: relative;
+}
+
+.email-btns img {
+	position: absolute;
+	width: 8vw;
+	height: 8vw;
+	top: 3.2vh;
+	left: 5vw;
+}
+
+::placeholder {
+	color: #292E47;
+	font-weight: 400;
+	padding: 20vw;
+}
+
+#questions input {
+	width: 100%;
+	padding: 4vh 0;
+	background-color: #F2F4FC;
+	font-size: 17px;
+	font-weight: 500;
+	border: none;
+}
+
+#questions button {
+	width: 100%;
+	padding: 4vh 5vw;
+	background-color: #072AC8;
+	font-size: 17px;
+	font-weight: 500;
+	color: white;
+	border: none;
+}
+
+
+/*----------------------- FOOTER------------------- */
+
+#footer {
+	margin-bottom: 8vh;
+	padding-top: 8vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5vh;
+}
+
+.box3{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2vh;
+	/* border: 1px solid black; */
+}
+
+#footer img{
+	width: 100px;
+	/* border: 1px solid black; */
+}
+
+address {
+	text-align: center;
+	font-style: normal;
+	font-size: 17px;
+}
+
+.tags-grid {
+	width: 80vw;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 50% 20%;
+}
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 903px) {
+
+	body {
+		background-color: #F2F4FC;
+	}
+
+	h1 {
+		font-size: 60px;
+		font-weight: 700;
+	}
+
+	h2 {
+		font-size: 40px;
+		font-weight: 700;
+	}
+
+	h3 {
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	h4{
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	.button-blue {
+		background-color: #072AC8;
+		color: white;
+		text-decoration: none;
+		padding: 15px 30px;
+		font-size: 17px;
+		font-weight: 500;
+	}
+	
+
+	/* ------------------------HEADER -----------------------*/
+	
+	.container {
+		max-width: 1100px;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		justify-content: space-between;
+		/* border: 1px solid red; */
+	}
+
+	.sub-container{
+		width: 80vw;
+		height: 70px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		/* border: 1px solid red; */
+	}
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+		/* border: 1px solid yellow; */
+	}
+
+	.image-logo {
+		width: 60px;
+		height: 18px;
+	}
+
+	#hamburguer input{
+		display: none; 
+	}
+
+	#hamburguer label {
+		display: none;
+	}
+	
+	ul{
+		font-size: 17px;
+		font-weight: 500;
+		display: flex;
+		list-style: none;
+		gap: 60px;
+	}
+
+
+/* --------------------MAIN PROJECT-----------------------*/
+
+#main-project {
+	margin-bottom: 8%;
+	max-width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+
+.vertical-container2 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/* border: 1px solid red; */
+}
+
+.article{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin: 0;
+	/* border: 1px solid pink; */
+}
+
+.horizontal{
+	display: flex;
+	justify-content: space-between;
+}
+
+.background{
+	background-image: url(https://res.cloudinary.com/dmcofgm8p/image/upload/v1658237001/Midproject_Images/Rectangle_71_j5sscd.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 444px;
+}
+
+.date {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	/* border: 1px solid black; */
+}
+
+.box-project {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	/* border: 1px solid black; */
+}
+
+p{
+	font-size: 20px;
+    line-height: 30px;
+}
+
+/* --------------------RECENT PROJECTS-------------------- */
+	
+	#recent-projects {
+		margin-bottom: 8%;
+		max-width: 1100px;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid black; */
+	}
+
+	.horizontal {
+		margin-top: 5%;
+		display: flex;
+		/* justify-content: space-between; */
+		gap: 40px;
+	}
+	
+	.box-section {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#recent-projects h3{
+		margin-left: 8%;
+		margin-top: 8%;
+	}
+	
+	#recent-projects h5{
+		margin-left: 8%;
+		margin-top: 5%;
+	}
+	
+	#recent-projects a{
+		margin-left: 8%;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+/* ---------------QUESTIONS------------------ */
+	
+#questions {
+	margin-bottom: 8%;
+	background-color: #FFC600;
+	max-width: 1300px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+
+.box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	margin: 0;
+	text-align: center;
+	/* border: 1px solid black; */
+}
+
+form {
+	margin-top: 5%;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+
+.email-btns {
+	width: 50%;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2vh;
+	position: relative;
+	/* border: 1px solid red; */
+}
+
+.email-btns img {
+	position: absolute;
+	max-width: 30px;
+	max-height: 30px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: -85%;
+	margin: auto;
+}
+
+::placeholder {
+	color: #292E47;
+	font-weight: 400;
+	padding: 18%;
+}
+
+#questions input {
+	width: 70%;
+	height: 100%;
+	background-color: #F2F4FC;
+	font-size: 17px;
+	font-weight: 500;
+	border: none;
+	/* border: 1px solid red; */
+}
+
+#questions button {
+	width: 30%;
+	height: 100%;
+	background-color: #072AC8;
+	font-size: 17px;
+	font-weight: 500;
+	color: white;
+	border: none;
+}
+
+/*----------------------- FOOTER------------------- */
+
+#footer {
+	
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+
+	margin-bottom: 8%;
+	max-width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+	/* border: 1px solid red; */
+}
+
+.box3{
+	height: 100%;
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#footer img{
+	width: 100px;
+	height: auto;
+}
+
+address {
+	text-align: left;
+	font-style: normal;
+	font-size: 17px;
+}
+
+.tags-grid {
+	width: 400px;
+	height: 100%;
+	font-weight: 400;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 50% 5%;
+	/* border: 1px solid green; */
+}
+
+}
+
