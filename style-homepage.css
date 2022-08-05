@@ -293,6 +293,14 @@ h4{
 	display: flex;
 	flex-direction: column;
 	gap: 1vh;
+	/* border: 1px solid red; */
+}
+
+.box-section{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid green; */
 }
 
 #recent-projects h3{
@@ -313,7 +321,12 @@ h4{
 
 .width{
 	width: 90%;
+	height: 300px;
 	/* border: 1px solid black; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 }
 
 
