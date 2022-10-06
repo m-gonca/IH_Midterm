@@ -1,4 +1,4 @@
-# Mid-Term Prject - Circle Agency
+# Mid-Term Project - Circle Agency
 
 First project done at Ironhack in the Frontend Bootcamp. The goal is to replicate this web: [circle](https://circle-agency-35d27e.webflow.io/).
 
